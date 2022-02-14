@@ -1,6 +1,5 @@
 resource "aws_s3_bucket" "this" {
   bucket = var.bucket_name
-  acl    = "public-read"
 
   website {
     index_document = "index.html"
@@ -18,6 +17,16 @@ resource "aws_s3_bucket" "this" {
     git_org              = "LironElbaz"
     git_repo             = "tf-dev"
     yor_trace            = "e7451a11-6895-417e-b54c-5802399f107d"
+  }
+  server_side_encryption_configuration {
+    rule {
+      apply_server_side_encryption_by_default {
+        sse_algorithm = "aws:kms"
+      }
+    }
+  }
+  versioning {
+    enabled = "versioning/[0]/enabled:true"
   }
 }
 
