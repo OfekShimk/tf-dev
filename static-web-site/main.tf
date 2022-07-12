@@ -9,15 +9,10 @@ resource "aws_s3_bucket" "this" {
 
   tags = {
     "Managed via"        = "terraform"
-    Environment          = "training"
-    git_commit           = "fd646f38c0eda7ce0ab52a4d87493b79e2512474"
-    git_file             = "static-web-site/main.tf"
-    git_last_modified_at = "2021-08-25 12:13:10"
-    git_last_modified_by = "lelbaz@paloaltonetworks.com"
-    git_modifiers        = "lelbaz"
-    git_org              = "LironElbaz"
+    git_last_modified_by = "oshimko@paloaltonetworks.com"
+    git_modifiers        = "ofekshim"
+    git_org              = "ofekshim"
     git_repo             = "tf-dev"
-    yor_trace            = "e7451a11-6895-417e-b54c-5802399f107d"
   }
 }
 
@@ -31,15 +26,10 @@ resource "aws_s3_bucket_object" "this" {
 
   tags = {
     "Managed via"        = "terraform"
-    Environment          = "training"
-    git_commit           = "fd646f38c0eda7ce0ab52a4d87493b79e2512474"
-    git_file             = "static-web-site/main.tf"
-    git_last_modified_at = "2021-08-25 12:13:10"
-    git_last_modified_by = "lelbaz@paloaltonetworks.com"
-    git_modifiers        = "lelbaz"
-    git_org              = "LironElbaz"
+    git_last_modified_by = "oshimko@paloaltonetworks.com"
+    git_modifiers        = "ofekshim"
+    git_org              = "ofekshim"
     git_repo             = "tf-dev"
-    yor_trace            = "c4dc6dfc-1562-42cc-ba9c-30b6e78b1cfc"
   }
 }
 
